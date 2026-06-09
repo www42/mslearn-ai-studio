@@ -25,13 +25,13 @@ To complete this exercise, you need:
 
 Microsoft Foundry uses projects to organize models, resources, data, and other assets used to develop an AI solution.
 
-1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
+1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` to start building; signing in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in.
 
 1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, if prompted, create a new project with a unique name; expanding the **Advanced options** area to specify the following settings for your project:
     - **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
-    - **Region**: Select any of the **AI Foundry recommended** regions
+    - **Region**: Select any of the **AI Foundry recommended** regions in **[this list](https://learn.microsoft.com/azure/foundry/openai/how-to/responses#region-availability)**{:target="_blank"}
 
 1. Wait for your project to be created. Then view its home page.
 
@@ -39,7 +39,7 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 Microsoft Foundry Models provides a catalog of models that you can use in your project. You can browse the catalog and compare models to find the right one for your needs.
 
-1. Now you're ready to **Start building**. Select **Find models** (or on the **Discover** page, select the **Models** tab) to view the Microsoft Foundry model catalog.
+1.  Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
 
     The model catalog lists all models available in Foundry. Some are provided directly from Azure (and billed through your Azure subscription) while others are provided by partners and the community.
 
@@ -96,8 +96,7 @@ Now let's deploy the models we'll use for testing and evaluation. You need to de
 Now that you have two model deployments, let's compare them in the playground.
 
 1. In the playground, ensure the deployment for the **gpt-4.1-mini** model is selected in the **Models** list, and then on the right side of the page, in the **Compare models** list, select the deployment for the **gpt-4.1** model.
-1. Select the **Setup** tabs for both models, and set the **Instructions** to `You are an AI assistant that helps solve problems.`
-1. Select the **Chat** tabs for both models, and enter the following prompt:
+1. The side-by-side comparison view opens directly into separate chat panes for each model. Select the **Chat** tab for both models, and enter the following prompt:
 
     ```
    I have a fox, a chicken, and a bag of grain that I need to take over a river in a boat. I can only take one thing at a time. If I leave the chicken and the grain unattended, the chicken will eat the grain. If I leave the fox and the chicken unattended, the fox will eat the chicken. How can I get all three things across the river without anything being eaten?
@@ -120,7 +119,7 @@ The model playground is useful for quick manual testing, but to systematically a
 1. In the playground, select the **Evaluations** tab.
 1. Select **Create** to open the **Create new evaluation** wizard.
 1. For the evaluation target, select **Model**.
-1. Select the deployment for **gpt-4.1** in the table of models, and then select **Next**.
+1. In the table of models, deselect any preselected deployments so that only the checkbox for **gpt-4.1** is selected, and then select **Next**.
 
 ### Step 2: Data
 

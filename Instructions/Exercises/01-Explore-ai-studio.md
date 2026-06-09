@@ -34,13 +34,13 @@ Before starting this exercise, ensure you have:
 
 Microsoft Foundry uses projects to organize models, resources, data, and other assets used to develop an AI solution.
 
-1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
+1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` to start building; signing in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in.
 
 1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, create a new project with a unique name; expanding the **Advanced options** area to specify the following settings for your project:
     - **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
-    - **Region**: Select any of the **AI Foundry recommended** regions
+    - **Region**: Select any of the **AI Foundry recommended** regions in **[this list](https://learn.microsoft.com/azure/foundry/openai/how-to/responses#region-availability)**{:target="_blank"}
 
     > **Tip**: Make a note of the region you selected. You'll need it later!
 
@@ -54,7 +54,7 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 At the core of any generative AI project, there's at least one generative AI model.
 
-1. Now you're ready to **Start building**. Select **Find models** (or on the **Discover** page, select the **Models** tab) to view the Microsoft Foundry model catalog.
+1.  Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
 
 1. Search for the `gpt-4.1` model, and then select it in the search results to view its model card.
 
@@ -122,7 +122,7 @@ As a developer, you may spend some time working in the Foundry portal; but you'r
 
     The extension may take a minute or so to install.
 
-1. After installing the extension, select the **AI Toolkit** page in the left navigation bar; and wait for it to load.
+1. After installing the extension, select the **Foundry Toolkit** page in the left navigation bar; and wait for it to load.
 
     ![Screenshot of the Foundry Toolkit Visual Studio Code extension.](../media/foundry-vs-extension.png)
 
