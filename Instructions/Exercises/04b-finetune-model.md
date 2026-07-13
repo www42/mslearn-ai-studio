@@ -5,6 +5,7 @@ lab:
   level: 300
   duration: 90
   islab: true
+  status: 'released'
 ---
 
 # Fine-tune a language model
@@ -39,7 +40,7 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
         - North Central US
         - Sweden Central
 
-    > \* At the time of writing, these regions support fine-tuning for gpt-4.1 models. Check the [models page](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?&pivots=azure-openai#fine-tuning-models) for the latest region availability.
+    > \* At the time of writing, these regions support fine-tuning for gpt-5 models. Check the [models page](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?&pivots=azure-openai#fine-tuning-models) for the latest region availability.
 
 1. Wait for your project to be created. Then view its home page.
 
@@ -48,13 +49,13 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 Next, let's deploy a model that you'll use to get a performance baseline.
 
 1.  Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
-1. In the model catalog, search for `gpt-4.1`.
+1. In the model catalog, search for `gpt-5`.
 1. Review the model card, and then deploy it using the default settings.
 1. When the model has been deployed, it will open in the model playground.
 
 ## Fine-tune a model
 
-Because fine-tuning a model takes some time to complete, you'll start the fine-tuning job now and come back to it after exploring the base gpt-4.1 model you already deployed.
+Because fine-tuning a model takes some time to complete, you'll start the fine-tuning job now and come back to it after exploring the base gpt-5 model you already deployed.
 
 1. Download the [training dataset](https://microsoftlearning.github.io/mslearn-ai-studio/data/travel-finetune-hotel.jsonl) at `https://microsoftlearning.github.io/mslearn-ai-studio/data/travel-finetune-hotel.jsonl` and save it as a JSONL file locally.
 
@@ -62,7 +63,7 @@ Because fine-tuning a model takes some time to complete, you'll start the fine-t
 
 1. In the Foundry portal, while viewing the model playground, left navigation pane, select **Fine-tune**.
 1. Select the **Fine-tune** button at the upper right, and then configure the fine-tuning job with the following settings:
-    - **Base model**: Select **gpt-4.1**
+    - **Base model**: Select **gpt-5**
     - **Customization method**: Supervised
     - **Training type**: Standard
     - **Training data**: Select **Upload new dataset** and upload the .jsonl file you downloaded previously.
@@ -76,9 +77,9 @@ Because fine-tuning a model takes some time to complete, you'll start the fine-t
 
 ## Chat with a base model
 
-While you wait for the fine-tuning job to complete, let's chat with a *gpt-4.1* foundation model to assess how it performs.
+While you wait for the fine-tuning job to complete, let's chat with a *gpt-5* foundation model to assess how it performs.
 
-1. In the left pane, select **Deployments** and then select the **gpt-4.1** base model you deployed previously.
+1. In the left pane, select **Deployments** and then select the **gpt-5** base model you deployed previously.
 1. In the chat pane, enter the prompt `What can you do?` and view the response.
 
     The answers may be fairly generic. Remember we want to create a chat application that inspires people to travel.

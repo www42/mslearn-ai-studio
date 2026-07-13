@@ -5,6 +5,7 @@ lab:
   level: 200
   duration: 30
   islab: true
+  status: 'released'
   primarytopics:
     - Microsoft Foundry
     - Visual Studio Code
@@ -56,11 +57,11 @@ At the core of any generative AI project, there's at least one generative AI mod
 
 1.  Now you're ready to explore models. On the **Discover** page, select the **Models** tab to view the Microsoft Foundry model catalog.
 
-1. Search for the `gpt-4.1` model, and then select it in the search results to view its model card.
+1. Search for the `gpt-5.2` model, and then select it in the search results to view its model card.
 
     Model cards provide information about models to help you understand their capabilities and limitations, and determine if they are suitable for your requirements.
 
-    ![Screenshot of the gpt-4.1 model card.](../media/gpt4.1-details.png)
+    ![Screenshot of the gpt-5.2 model card.](../media/gpt5.2-details.png)
 
 1. Select **Deploy** with the default settings to create a deployment of the model.
 
@@ -128,13 +129,13 @@ As a developer, you may spend some time working in the Foundry portal; but you'r
 
 1. In the Foundry Toolkit pane, expand **Microsoft Foundry Resources** and set the default project by connecting to Azure (signing in with your credentials) and selecting the Foundry project you created previously.
 
-1. After setting the default project, expand the project, expand **Models**, and select the **gpt-4.1** model you deployed previously.
+1. After setting the default project, expand the project, expand **Models**, and select the **gpt-5.2** model you deployed previously.
 
     You can view the model deployment details here.
 
     ![Screenshot of a model in the  Foundry Toolkit Visual Studio Code extension.](../media/vscode-extension-model.png)
 
-1. In the Foundry Toolkit pane, in the **Developer Tools** section, expand **Build** and select **Model playground**. Then select the **gpt-4.1** model (if it is not already selected).
+1. In the Foundry Toolkit pane, in the **Developer Tools** section, expand **Build** and select **Model playground**. Then select the **gpt-5.2** model (if it is not already selected).
 
     An interactive playground in which you can test the model is opened in Visual Studio Code.
 
