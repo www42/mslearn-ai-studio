@@ -38,6 +38,8 @@ def main():
                 print("Please enter a prompt.")
                 continue
 
+# Responses API (new style)
+# -------------------------
             # Get a response
             response = openai_client.responses.create(
                 model=model_deployment,

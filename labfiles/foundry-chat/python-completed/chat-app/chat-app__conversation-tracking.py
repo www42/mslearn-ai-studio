@@ -19,12 +19,13 @@ def main():
 
         # Initialize the OpenAI client
         token_provider = get_bearer_token_provider(
-            DefaultAzureCredential(), "https://ai.azure.com/.default"
+            DefaultAzureCredential(),
+            "https://ai.azure.com/.default"
         )
     
         openai_client = OpenAI(
-             base_url=azure_openai_endpoint,
-             api_key=token_provider
+            base_url=azure_openai_endpoint,
+            api_key=token_provider
         )
         
 
@@ -40,12 +41,14 @@ def main():
                 print("Please enter a prompt.")
                 continue
 
+# Responses API (new style)
+# -------------------------
             # Get a response
             response = openai_client.responses.create(
-                         model=model_deployment,
-                         instructions="You are a helpful AI assistant that answers questions and provides information.",
-                         input=input_text,
-                         previous_response_id=last_response_id,
+                        model=model_deployment,
+                        instructions="You are a helpful AI assistant that answers questions and provides information.",
+                        input=input_text,
+                        previous_response_id=last_response_id,
             )
             print(response.output_text)
             last_response_id = response.id

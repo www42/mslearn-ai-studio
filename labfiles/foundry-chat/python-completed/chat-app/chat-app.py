@@ -23,8 +23,8 @@ def main():
         )
     
         openai_client = OpenAI(
-             base_url=azure_openai_endpoint,
-             api_key=token_provider
+            base_url=azure_openai_endpoint,
+            api_key=token_provider
         )
         
 
@@ -38,6 +38,8 @@ def main():
                 print("Please enter a prompt.")
                 continue
 
+# ChatCompletions API (old style)
+# -------------------------------
             # Get a response
             completion = openai_client.chat.completions.create(
                 model=model_deployment,
@@ -53,6 +55,8 @@ def main():
                 ]
             )
             print(completion.choices[0].message.content)            
+
+
 
     except Exception as ex:
         print(ex)

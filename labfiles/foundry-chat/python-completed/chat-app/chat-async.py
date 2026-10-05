@@ -22,12 +22,13 @@ async def main():
         # Initialize an async OpenAI client
         credential = DefaultAzureCredential()
         token_provider = get_bearer_token_provider(
-         credential, "https://ai.azure.com/.default"
+            credential,
+            "https://ai.azure.com/.default"
         )
 
         async_client = AsyncOpenAI(
-             base_url=azure_openai_endpoint,
-             api_key=token_provider
+            base_url=azure_openai_endpoint,
+            api_key=token_provider
         )
 
         
@@ -46,10 +47,10 @@ async def main():
 
             # Await an asynchronous response
             response = await async_client.responses.create(
-                         model=model_deployment,
-                         instructions="You are a helpful AI assistant that answers questions and provides information.",
-                         input=input_text,
-                         previous_response_id=last_response_id
+                        model=model_deployment,
+                        instructions="You are a helpful AI assistant that answers questions and provides information.",
+                        input=input_text,
+                        previous_response_id=last_response_id
             )
             assistant_text = response.output_text
             print("Assistant:", assistant_text)
